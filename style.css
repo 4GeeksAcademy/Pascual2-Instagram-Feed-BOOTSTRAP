@@ -1,3 +1,7 @@
+/* import bootstrap icons*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+
 body {
     margin: 100px;
 }
@@ -6,3 +10,8 @@ body {
     max-height: 20rem;
     min-height: 20rem;
 }
+
+.i__navGrid {
+    color: white
+}
+
