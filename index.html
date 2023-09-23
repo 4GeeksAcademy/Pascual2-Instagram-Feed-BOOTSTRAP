@@ -10,7 +10,14 @@
     <!-- Main Nav Bar -->
     <nav class="navbar navbar-expand-lg bg-light  d-flex flex-row">
         <div class="container-fluid">
-          <a class="navbar-brand col-2" href="#">Navbar</a>
+          <div class="row d-flex justify-content-left align-items-center">
+            <did class="col p-0">          
+              <a class="navbar-brand col-2 m-0" href="#"><i class="fa-brands fa-instagram"></i></a>
+            </did>
+            <did class="col p-2">
+              <strong>Instragram</strong>
+            </did>
+          </div>
 
           <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarSupportedContent">
             
@@ -40,7 +47,7 @@
                   </div>
                   <div class="modal-body">
                     <h2><strong>Caption</strong></h2>
-                      <textarea name="" id="" cols="30" rows="8" placeholder="Add some text here my friend"></textarea>
+                      <textarea class="w100"  name="" id="" cols="60" rows="8" placeholder="Add some text here my friend"></textarea>
                       <div class="modal-footer d-flex justify-content-start">
                         <button type="button" class="btn btn-outline-secondary">
                           <i class="fa-solid fa-camera"></i>
@@ -48,6 +55,12 @@
                         <button type="button" class="btn btn-outline-secondary">
                           <i class="fa-solid fa-location-dot"></i>
                         </button>
+                      </div>
+                      <div class="modal-footer d-flex justify-content-end">
+                        <button type="button" class="btn btn-secondary">Close</button>
+
+                        <button type="button" class="btn btn-success">Public</button>
+
                       </div>
                   </div>
                   
@@ -75,49 +88,55 @@
 <!-- First Grid -->
     <div class="tab-content">
       <div class="tab-pane active" id="grid" role="tabpanel" aria-labelledby="home-tab">
-        <div id="grid" class="hide show container text-center">
+        <div id="grid" class="container text-center">
           <div class="row">
-            <div class="col" style="width: 5rem; height: 6rem;">
+            <div class="col" style="width: 5rem; height: 22rem;">
               <div class="card m-2">
-                <div class="row post-header col-12 py-2 px-3">
-                  <div class="col-6 float-left"><h4>Great News</h4></div>
-                  <div class="col-6 float-right text-right post-number"><h4>12/14</h4></div>
-                </div>
+              
                 <img src="https://images.theconversation.com/files/38926/original/5cwx89t4-1389586191.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip" class="card-img-top" alt="...">
-                <div class="row card-body">
-                  <p class="card-text d-flex justify-content-start"><strong>125 likes</strong></p>
-                  <p class="card-text d-flex justify-content-start">Thois is my first post with a dog</a>
-                </div>
+                
               </div>
             </div>
-            <div class="col" style="width: 5rem; height: 6rem;">
+            <div class="col" style="width: 5rem; height: 22rem;">
               <div class="card m-2">
-                <div class="row post-header col-12 py-2 px-3">
-                  <div class="col-6 float-left"><h4>Mmm yes</h4></div>
-                  <div class="col-6 float-right text-right post-number"><h4>12/14</h4></div>
-                </div>
+                
                 <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIVEhgSFRUYFRgaGBoZEhoYGhgcGBkYGBgZHBgaGRgcIS4lHB4rJBgYJzgmKy8xNTU1HCQ7QDs0Py40NTEBDAwMEA8QHxISHzosJSs2NDE2NDYxNDQxNDQ0NDQ0NDQ0NDQxNDQ0NDQxNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAwQBAgYFBwj/xABDEAACAQIEAgcFBQYEBQUAAAABAgADEQQSITFBUQUiMmFxgZEGE1KSoUJicrHRFCOCssHhFTNUkzSis8LwB1NzdIP/xAAaAQEAAgMBAAAAAAAAAAAAAAAAAQIDBAUG/8QAKhEAAgEEAgECBgIDAAAAAAAAAAECAwQRMRIhQQVREyIyYXGhM7EVgZH/2gAMAwEAAhEDEQA/AOImGbyikjueoLjix0UefHyl/D9GqNX67d/ZHgv63meMXIwaKNGlUfsCy/E23kN2/LvnpYbAIhzEl2+JuH4RsJcyzJmaMEiGzImCZHVrKguxAHf/AE5mU3xVR+wMg+Jhr5Jw8/SWckiC3WrKguxCjv8A6c5TOLdyQgyAWuXHWsdiqeup5bTCUADmN2b4m1Ply8BMVrgioOHaHNTv6b+UxuTZXkvBslEA5iSzcWY3PlyHcJLMA+fKZvIKN+4iLxBAiIgCJHVfKpaxNgTYbmw2jMy2DrlzC6G4KuCL3VhofDeVc0nhl1CTTaXSJImAZpUrKtgxAubLfieUsVJImAZmCBERAEREAREQCvWOVhU4Dqv+E8fI6+F5PMMARbccZDQewKk6ppc/D9k+mnkZBbaLESm/SFMaLdzyTX67fWRmpWbYBB39Zv0EklRbLzOBqdBzMqv0gmy3c/dFx820i/YwdWJc/eOnpsJZSmALAWjBZRXkh/aKvwDzY/pEsWiTgtxR6KraZkVWsqC7EAf+aAcZUfE1H7AyD4mGvknDz9JkckiPyXK1ZUF2YL48fDnKb4qo/YGQfEw63knDz9JqlAA5jdm+JtT5ch3CSgSjk2VcvYiSgAcxuzfExufLkO4SW0zEqUbzsTBmTPJxOOdahA7K2zC299Tr3X+khvBKi3ovUeqfd8N08OK+V/Q90i6QxLIoKgG5tc7Dyk1RcygqdR1kPf8AoRp5w6rUp24MPMEf1BkP2RPW2efT6RqA9YBh3Cx8tdZ6dKoGAZTcGeCAQSrbg2Ms4CqVqBeD6W5NbQ/T8pVSfktKKej2YmAZm8yGIwZf6HCPTfDOAwQ3UH4GJK2PAqQwFtrCUZJ0dUyYhDwcMjeYzL9Vt/FNS9hyotra7Rven1ONZJ6fTGNwj0WFzmQmyOdweCv38jx8d6tddL2DFSGANrG26m/MXHnOvrUldSjAFSLEHiJy+JwzUnyNcqf8tuYH2SfiH1GvOa1lefFjwnv+zbvrH4Uvi09f0SYnBZEFald6TAMV3ZARcFeJXu3EgRgRcag7T1PZ6r1XpH7BzJ+B7n6MG+kqdKYE0mNRR+7JuwH2CeP4D9PDaaF041HRqPWmVuLNTpKvSW9ogiYEEzpnIMxeVKuOQaXzHkup+m3nIzXqt2VCDm2p9BtBZRbLpaVnx9MaA5zyXX67SE4TNq7Fu49n5RpLCUwNgBGC6ivJAatVtlCDmdW9Nh9ZqMECbuS579vTaXLRJwWSxo1VANhabWiJJIiLwTAETT36/EvqJiASpQAOY3ZvibU/28BJLTMSpgbyIiIIEREAwZ4NYfvHv8R/t/Se/PJ6ToEMKigm9la299hp9PSVlovB94JOi626HhqvhxHkfzEtdl/uv9H/ALjTxA5zxkqZWDjdTqPzE9xsrp3MNCO/YiVi8omSwyh0rQ2qDcaP4c/Ka9HYCtVZWRLqDqzHKmg+Lj5Az2uisA1cBn0TbTepbiOSH6+G/TU0CgBQABoABYAeE5t3fxpy4w7f6OvZ+nOceVTpfs59OiMQdzTXwLt/2ibN0PXA0ZD86/rOhmZof5Gv7/o6H+Lt8a/Zyz4DEqNaat+BwT6MFlHEVstiwZGVlYZ1Km6sDoToduE7YiasgOhFx3zKvU54xNJmN+k08qUG1gyJWx2EWpTKNpxUjdWGzDwloCCJzlJxlyidOUFKPGRy/RBZcUFbRsrpUHAkZWUjuIBI8Z0zKCLHUHeVXwKGstbXOFy9x3sSOYufWXBM1zXVSSkt4Wfya9tQdKLh4y8fg4zpOhUo1PdJlykZqbNc2W9ituOXTyIlT9lLdt2fu2X0E6b2jo3pCoN0cN/C3Vbysb+U8QTv2Fb4tJN7XRwb6gqVVpLp9kaUVXYASS0RN40xEEyN66r2iBAJIvIVd27CMe9uqPrr9JKuFqHtOF7kGvzN+kAM4Gp08ZCuIB7AZ/wi4+bb6y0mBpg3y5jzYlj9dvKWgIwyOSPPWjVb4U8esfQWA9TJVwCntsz+JsPlWw9ZciThEcmQDC0/gX0EzJojAyyvERKGEREQBERAEjqpcEbd43B4Ed4m5M1VizZEUu3ELw/Edl85WcoxWZaL04ylLEV2enTwVHFUlqOmV9Vdk0YOuh8RxF77iVaHs86kUy4alcknVXy/AANNed9p6nQ2CemHzkXdg1luQtgBudzpvaenaecndTpzlGm8rweqhaQqQjKpHvyaooAsBYDQDkJvMTWo4UFibAC5PIDeaO2b3SN4lalXd1DpRrOpF1YUyAQdiM1riaviwvbSpTtuXpuqjxa2X6zI6NReGY1Wg/JbiQ0MSjC6urDmpB/KSgyjTXTRkTT0ZiYvEgkzExEAgxtEOjodmVl9Racdh3uisdyoJ8baztnawvOKwOCRkQsC11BsxNhfW2Xadv0hv5kcT1ZL5X+TU4lb2BzHkoLH0G02VajbIEHNzr8q3/MS+iACwAA5DSbWnb4nFyU1wJPbdj3L1B9NfrJ6OGROyoHfbX13k0QkivJmLTMRJIEREAREQBERBJXiImMxCIvNWa0Em0XlN8emy3c8lF/rtNM9ZuSD5m/SCVFss19wTqo7a5smYfjG09jorpjCsAiWp8ApAUE/dYdVvW851cGt7sS55sb+g2EnKC1rC3Katxaqsu20b9rcuhpJnagzM8T2awxWmXuQrn92tzlCDQEC+l9T4WntiearQUJuKecHp6U3OCk1jIMwZkzz8Rg6Yqe+amtQbVVt1yo+0jDrK47jqNORCnGM5Yk8E1JOMcpZL2AxpwzXJ/cMeuP/AGiftr9z4hw3HG/YKQdR5TmD0JmQPhq2ZGAKrUuyMpHBx1x55vCXvZqlWSkaVVMmRytPrBgUNitiOAuVFwNAJ0YxajhvOPJz5Si30tl3F9E4eobvRRjwYqMw/iGo9Z59T2Zp/YqVqfg+celQNp4T3ZmTvY1o5d+gcSvYqo44B0KH50JH/LKr4fFJ2sOx5mmyuPQlW+k7OYtMcqcHtFlUktM4NukKY0Zvdna1RWQ35dcC8sLUUi4YEcwQR6zsmF99Zwvtv0NTVkxIpJkyla1lXqkkFHOm3aBPesrG0hOXFPH7JndzhHLWSj0vjlYGihuTpUI2RTuL/EdrcL38aSiaogAsAAOAG0knetbaNCPGP/Tg3VzKvLMhERNk1RERAEREAREQBERAEREElYtKtTG0xoDnPJdfrtIjhc3bZn7jovyjSTpTA2AEx4CgvJEatVtgEHfq3psPrNRhAdXYufvHT5dpatEnCLpJaNUQDQC02tF5C2JS9r3PJQWPoJIJjIsQTlIG56q+LHKPqZlFqNsgUc3Ovyrf6kSSlhSKlMs5b95T0AAXtDhv9ZjqS4wbXsXpJSmk/c6+hSCKqDZQFHgBaSzAmZ49vLyewSwsCYImYkEkvQGJ91VNA6JUJelyVxq6DuYXYd4funUgTiMWjFbpo6kPTP30N1v3G1j3Ezr8Dilq00qrs6hh3XGx7xt5To0Z84Ze10c+rDhL7PssRIMLiFqIKiG6tqp1Fxe3Hwkj1VUXZgo7yB+cy4ZjyiQmV/2xPee6zAPlzBToSt7Er8VuNtri+80PSNDjWp/On6ypjxRrplSqgcHNRdWUsjjssLG5HAjiCRxllH3Kua8Hq2mtQaHTNodNNe7XSedh+mKXuVq1XSkdRUDOoCujFXUE72ZSI/xyiSAgqVL7GnRrOPmRCPrChLOg5xx2zgekMM1Ksymi9BGa9BXy2tlBZFZWZdDmsL3tw0kYM7TFdK4LEB8PUWoQCFqhqNYZGIzLmbJ1G4gmx0nD0iLsofOFdkD/ABBWIDeJFjOrbVXJcZLDRyLmlGL5ReUyWIibRqCIiAIiIAiIgCIiAIiIJKN5hmA1JsIXC1D2nC9yC5+Zv0kiYGmNSMx5uSx+u3lK4ZfKKq4gN2AzfhGnzHT6yRaFVvhQfM39APrL4EzaMEZKgwC/aLP+I6fKLCWUpqosAAOQFhN4k4RVtswBIsSSFzLqVKuAOJRg1vO1pNMESJRUk0yYycWmjoqNQMoZTdWAKnmCLiSzm8BjPcnK2tIm9+NMk6n8B+nht0KOCAQbjgRt6zydzbyozaevDPWW1xCtBNb8o2i8ixFUIpY3NuA1JJNgAOJJIHnLA6NpqFbF4j3LP2EV1QDuz9p28LDu4ylKhKfa0ZKlaMNkZM9H2Vf93Up69Sq2X8LhXFvN2HlPOx+DOHKuHNSi5ChmKlkY9m7AAMrbX3BtvfS17NMf2nELwyUW8yaqn6KJs0acqcmn7ZNerOM4Jr3K/RNX92KLVKxNMvSNHC0yKh927LepiHsqZgFYAFTY3uZ6VPAqSCvR+FXjnxTtiKt+/qn+cz0MPhClWo4PUqZWK21DgZWYHkVCac175ctN11caRpfBUttnL9HezuIo4mviUqYYGuQXQ4YsiZdsimoLbmehVwlYgiph8BiddAaBot5Pd7HvtPZkOJRmRlVsjEEK1r5SeIHEyFWlnth28MdI5P2bxWVnp0MPhaFQ1KxD1g9Woyiq3VS6rnVdrhz4CdM7Y9gM2NKc/dUaSjyz5zIm6KpGitAg5VAyG5zqRs4fcPuc3eZBTqYumuRqa4i2iurqjMOBdGAAbnY2O+mws6remRGjFbRp0f0NUoVatejiqivWIauXSiwdlvYkBBbc7W3M4fE1WevXqMwctWqXYLlDWOW4W5sOrznVdN9J400ilLCVUJ0Z81Jyi21KIjks3Aaab67TjcPlCgLoF6ttQRbgQdQfGbdpltuTNK7UVhRRNERN80BERAEREAREQBERAEREEiIiCBERAEREAREQDBE1w71Kf+W1hfVG1TvtxTy07jN4lKlOFRcZLKMlOrOnLlF4ZdwnSgetQWohT98lzcMl7nLroe2U3E6XpTo5DiEarZ0qVQGBXqgJSb3aMTe65wW4XYqJxVWmGBB2Onf5HgZ03R3tFRen7jG2U2sajaI9uySw7D6A6212M51W1VFL4a6OjSuvivE32e6vQ1Me8QC1KooDUwLIG62Z0+Em63sN1B3lX2b6Nq0WqtVILMURGB1ZEDZXPIkudJY6JxOGuUo1zW0uTnaqFA0tnJIHgTcz15qSb0bsUnoGIiUMgiIgCLxKWMwjuRlrPSA7QQJ1vFmQkeVpKIZcnzn2kdTjapQiwSmHtbtgMWv35Sg8p2NToNGUq1XEMDuDWcfykT59UwjUKjYdt0OhsBnQ3yPpztr3hpu2aXPZoXrfDGDaIidQ5IiIgCIiAIiIAiIgCIiCRERBAiIgCIiAIiIAiIgCYImYgHQew+KyvUw52Ye9p+IslQeH+Wf4jO1nzf2ffLjqFuJqKfA03b81HpPo95xrqKjUeDtWc3Kn+DMRE1jcERI6lVUBZmCgbliAB4kwQ3gkief/AI3g/wDU0f8AcT9YHTWE/wBTR/3E/WTh+xHJe5fnie0nQf7QgZCFqpf3ZOzA7o/3TYa8Drzve/xfC/6il/uJ+sr1PaTAg2OKoA//ACJ+svDnGWYmOfCSxJnz1SQSrKUZTlqK3aVhwP534ggzeXvaLHUq+KD0dVVMlR7WDtmuuW/aCjNrt1uNpRnapScoJtdnDqxUZtJ9CIiZDGIiIAiIgCIiAIiIJEREECIiAIiIAiIgCIiAJqzTJlLFNnb3Y7IsanfyX+p7vGUnNQjlmWjSlVmoryXugMRnx2Gyg5feN1uBvSqDqjiO/wDOfVJ8s9mxm6QoIB2SznwCOPzt6z6mJx683OWWdunRVLMUzMREwGYStiMDSdlZ0Ryt8hZQ2W+5F9jLMExnBDI/dL8I9BOY9quk8MKb4YIlWoykZMoKoSNGqH7NtCBv+cj9qennDnDUGysAPfVBuuYXCJyYggk8ARxOnLU6YUWAtx8SdyTxPfN63tnL5no59zcqPyxXZqtJQALA2G5Av4zcLNrROnhHLyYtMxEkgREQBERAEREAREQBERBIiIggREQBERAEREATF5h2AFybc+UpPXZ9EOVfi+0fwg7DvPlzlJ1IwWWZqNCdWWIomxOLRAb6m18o1P8AYd5lfDKcoJ3PWbxbX+3lI69MLTYAbqb8SSRbU8TLKic6tXdT8Hfs7NUJNt5eD2vYwqMctxq1J1U8iCjfkGn0a8+QLVKVEqB2p5HUl1tmVL2ci9weqW0Ohn1CtUxGH/4hC6fZr0VZkIOxemLvTPzL3jaa8oOSyhWlGFRp+ey/Myrg8fSq606iPzysCQeRA1EtEzDhrZCaehKHTGPWhQqVjrlXqj4mOiL5kgS9mnG+2a1aqO6WNHCshxHMu+gt+BWVjf4xyl4RbZWUkt+eji3d1Y1SSzMS1b7xJuzAcxf005T0Ea4uNuErTXANlLU/h1T8B4eRuPSdG1q5+Vmt6laqKVSK+zLsQIm8cYREQBERAEREAREQBERAEREEiIiCBERAEREASKvWVBmY2H1J5AcTNcTiAgudSdFA3Y8h+sqpTJOd9W4clHJf14zBWrqC+5uWtpKtL7e5hgzm7aL9lPyL8z3beO8nAi0zOZOcpvLPS0aEKUcRRXxvYI5lR6sJOsr4zsj8S/zCWRIei0frf+jV0BBB2Ohn1/8A9Pelff4FFY3el+5qczkAyMfFSp9Z8iInQ+wPS/7PjQjGyVwKbchUFzSbzuyfxLymSlLDwafqFLlDkto+pY/oLCVjmqUEZhs+UBx4OLMPWeefZOiNErYpBwArO1vnzH1nRCJsOKeziKTWmc6vson2sRim/wD1t/Kom/SfQiL0diMNSFg9GqAWJZmdkY5nZtWYm2pnvzDC+kKKWieTe2fneg+ZFbmAfUXlfGIQVdTlKm1+5tNRxF7S3UpBKj0xtTqVEX8KVHVR6ATWqgZSp4gj1mqm4y6PQ8VVo4flEmGr5rgjKw7Q/qOYMszyVZsq1ALsosw+IDRl+lx3z06dQMAQbgi48DOlQq8497R5y7t3Rl1p6N4iJnNQREQBERAEREAREQBERBIiIggREQBMGIhA89v889yC3drJ4icm5/kZ6n0/+BCIiYDdK+M7P8S/zrLERLPRRfWxIMXpTYjQixB4ghl1BiJMdir9EvwfolOyPwj8hN4ibh5cREQD4B0n/wAVif8A7Nf/AKryAzMTUl9TPSUP4o/gr4Ps/wAT/wAzSXovseb/AM5iJs2v1M5vqf8AHEuxEToHCEREAREQBERAEREAREQSf//Z" class="card-img-top" alt="meme">
-                <div class="row card-body">
-                  <h5 class="card-title d-flex justify-content-start">150 likes</h5>
-                  <p class="card-text d-flex justify-content-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+                
               </div>
             </div>
-            <div class="col" style="width: 5rem; height: 6rem;">
+            <div class="col" style="width: 5rem; height: 22rem;">
               <div class="card m-2">
-                <div class="row post-header col-12 py-2 px-3">
-                  <div class="col-6 float-left"><h4>Yes, is me</h4></div>
-                  <div class="col-6 float-right text-right post-number"><h4>12/14</h4></div>
-                </div>
+                
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-xZBfy0eK90X_RoWzokAkarQrQzhWJtTOng&usqp=CAU" class="card-img-top" alt="meme">
-                <div class="row card-body">
-                  <h5 class="card-title d-flex justify-content-start">130 Likes</h5>
-                  <p class="card-text d-flex justify-content-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" style="width: 5rem; height: 22rem;">
+              <div class="card m-2">
+              
+                <img src="https://img2.rtve.es/im/5805132/?w=900" class="card-img-top" alt="meme">
+                
+              </div>
+            </div>
+            <div class="col" style="width: 5rem; height: 22rem;">
+              <div class="card m-2">
+                
+                <img src="https://media.revistagq.com/photos/5ca6025cb65710f52ccab5e2/master/pass/memes_y_cunados_6890.jpg" class="card-img-top" alt="meme">
+                
+              </div>
+            </div>
+            <div class="col" style="width: 5rem; height: 22rem;">
+              <div class="card m-2">
+                
+                <img src="https://blog.hubspot.es/hs-fs/hubfs/media/socialmediamarketing-1.jpeg?width=610&height=406&name=socialmediamarketing-1.jpeg" class="card-img-top" alt="meme">
+                
               </div>
             </div>
           </div>
         </div>
+        
       </div>
       <!-- second row vertical row -->
       <div class="tab-pane" id="vertical" role="tabpanel" aria-labelledby="profile-tab">
